@@ -19,3 +19,86 @@
 .usermotto {
   margin-top: 200px;
 }
+
+.main-container {
+  background-color: #22aacc;
+  margin: 0 auto;
+  height: 120rpx;
+  width: 160rpx;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 20rpx;
+}
+
+.con-flex {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.con-input {
+  border: 1rpx solid #413333c2;
+}
+
+.input-padding {
+  padding-right: 90rpx;
+  margin-top: 20rpx;
+}
+
+.input-intetrest {
+  margin-top: 20rpx;
+  padding-right: 104rpx;
+}
+
+.button {
+  margin-top: 20rpx;
+}
+
+.scroll-title {
+  margin-top: 15rpx;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.title-item {
+  background-color: rgb(219, 219, 219);
+  width: 170rpx;
+  text-align: left;
+}
+
+.scroll-content {
+  height: 720rpx;
+}
+
+.item-moun {
+  width: 40rpx;
+  text-align: center;
+  color: red;
+}
+
+.item-content {
+  width: 160rpx;
+  text-align: center;
+}
+
+.item-content-last {
+  width: 180rpx;
+  text-align: left;
+}
+
+.title-qi {
+  width: 80rpx;
+}
+
+.title-int {
+  width: 165rpx;
+}
+
+.allInt {
+  margin-top: 20rpx;
+  padding-right: 50rpx;
+  color: red;
+}
