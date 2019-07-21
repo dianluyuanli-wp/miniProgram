@@ -8,3 +8,11 @@
   padding: 200rpx 0;
   box-sizing: border-box;
 }  */
+
+.container {
+  height: 100%;
+}
+
+page {
+  height: 100%;
+}

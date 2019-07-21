@@ -24,7 +24,7 @@
   <view class='con-flex input-padding'>
     <view>贷款金额</view>
     <view class='con-flex'>
-      <input data-type='capital' type='number' bindinput='bindInput' value='{{capital}}' 
+      <input data-type='capital' type='digit' bindinput='bindInput' value='{{capital}}' 
        class='con-input' placeholder='请输入贷款金额'></input>
       <view>万</view>
     </view>
@@ -33,7 +33,7 @@
   <view class='con-flex input-padding'>
     <view>贷款年限</view>
     <view class='con-flex'>
-      <input data-type='year' type='number' bindinput='bindInput' value='{{year}}' 
+      <input data-type='year' type='digit' bindinput='bindInput' value='{{year}}' 
         class='con-input' placeholder='请输入贷款年限'></input>
       <view>年</view>
     </view>
@@ -42,18 +42,18 @@
   <view class='con-flex input-intetrest'>
     <view>贷款年利率</view>
     <view class='con-flex'>
-      <input data-type='interestRate' type='number' bindinput='bindInput' value='{{interestRate}}' 
+      <input data-type='interestRate' type='digit' bindinput='bindInput' value='{{interestRate}}' 
         class='con-input' placeholder='请输入贷款年利率'></input>
       <view>%</view>
     </view>
   </view>
 
-  <view class='con-flex'>
+  <view class='con-flex cum-height'>
     <button class='button' type="primary" size="mini" bindtap="primary"> 计算 </button>
     <view class='allInt'>总利息{{allInterest}}万</view>
   </view>
 
-  <view>
+  <view class='left-content'>
     <view class='scroll-title'>
       <view class='title-item title-qi'>期数</view>
       <view class='title-item title-int'>月供</view>
@@ -62,14 +62,12 @@
       <view class='title-item'>本金余额</view>
     </view>
     <scroll-view scroll-y class='scroll-content'>
-      <view wx:for='{{detail}}'>
-        <view class='con-flex'>
-          <view class='item-moun'>{{index + 1}}</view>
-          <view class='item-content'>{{item.allSpendMounth}}</view>
-          <view class='item-content'>{{item.cap}}</view>
-          <view class='item-content'>{{item.interest}}</view>
-          <view class='item-content-last'>{{item.remainCap}}</view>
-        </view>
+      <view class='con-flex font-item' wx:for='{{detail}}'>
+        <view class='item-moun'>{{index + 1}}</view>
+        <view class='item-content'>{{item.allSpendMounth}}</view>
+        <view class='item-content'>{{item.cap}}</view>
+        <view class='item-content'>{{item.interest}}</view>
+        <view class='item-content-last'>{{item.remainCap}}</view>
       </view>
     </scroll-view>
   </view>

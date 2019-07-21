@@ -24,9 +24,10 @@
   background-color: #22aacc;
   margin: 0 auto;
   height: 120rpx;
-  width: 160rpx;
+  width: 200rpx;
   padding: 0;
   display: flex;
+  font-size: 30rpx;
   justify-content: center;
   align-items: center;
   border-radius: 20rpx;
@@ -70,7 +71,7 @@
 }
 
 .scroll-content {
-  height: 720rpx;
+  height: calc(100% - 15rpx - 21px);
 }
 
 .item-moun {
@@ -101,4 +102,16 @@
   margin-top: 20rpx;
   padding-right: 50rpx;
   color: red;
+}
+
+.font-item {
+  font-size: 25rpx;
+}
+
+.left-content {
+  height: calc(100% - 270rpx - 98.17px);
+}
+
+.cum-height {
+  height: 70rpx;
 }
